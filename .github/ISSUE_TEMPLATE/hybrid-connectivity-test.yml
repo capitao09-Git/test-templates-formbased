@@ -7,57 +7,57 @@ assignees:
   - 
 body:
     - id: request-description
-        type: textarea
-        validations:
-            required: true
-        attributes:
-            label: Request Description
-            placeholder: Write a brief description of what you need the connectivity for
+    type: textarea
+    validations:
+        required: true
+    attributes:
+        label: Request Description
+        placeholder: Write a brief description of what you need the connectivity for
     - id: generic-details
-        type: textarea
-        validations:
-            required: true
-        attributes:
-            label: Generic Details
-            value: |
-                Project (Project name): 
-                Project PR/issue link (Link to project issue or PR):         
-                DC Networks to connect (DC Network range):
-                Environment (Project environment - prod, dev, lab):
-                Purpose (Main reason for hybrid connectivity):
+    type: textarea
+    validations:
+        required: true
+    attributes:
+        label: Generic Details
+        value: |
+            Project (Project name): 
+            Project PR/issue link (Link to project issue or PR):         
+            DC Networks to connect (DC Network range):
+            Environment (Project environment - prod, dev, lab):
+            Purpose (Main reason for hybrid connectivity):
     - id: workload-details
-        type: textarea
-        validations:
-            required: true
-        attributes:
-            label: Workload Details
-            value: |
-                Number of IPs for Compute Engines (GCE, Notebooks, etc): 
-                GKE Workloads (need GKE workloads?):         
-                GKE Workloads - Number of Nodes (GKE Nodes):
-                GKE Workloads - Max Number of Pods (max number of pods per host):
-                GKE Workloads - Number of Services (number of services):
-                SQL Workloads - Number of Nodes (number of SQL nodes):
-                Composer Workloads (need Composer workloads?):
-                Composer Workloads - Number of Nodes (Composer Nodes):
-                Composer Workloads - Max Number of Pods (max number of pods per host):
-                Composer Workloads - Number of Services (number of services):
+    type: textarea
+    validations:
+        required: true
+    attributes:
+        label: Workload Details
+        value: |
+            Number of IPs for Compute Engines (GCE, Notebooks, etc): 
+            GKE Workloads (need GKE workloads?):         
+            GKE Workloads - Number of Nodes (GKE Nodes):
+            GKE Workloads - Max Number of Pods (max number of pods per host):
+            GKE Workloads - Number of Services (number of services):
+            SQL Workloads - Number of Nodes (number of SQL nodes):
+            Composer Workloads (need Composer workloads?):
+            Composer Workloads - Number of Nodes (Composer Nodes):
+            Composer Workloads - Max Number of Pods (max number of pods per host):
+            Composer Workloads - Number of Services (number of services):
     - id: workload-details
-        type: textarea
-        validations:
-            required: true
-        attributes:
-            label: Workload Details
-            description: Internal GCP APIs Access require client-side configuration. Please ask for help with that.
-            value: |
-                Data Flow (GCP->OnPrem or OnPrem -> GCP or both): 
-                Bandwidth Requirement (value in Mbps or Gbps required):         
-                Transfer Frequency (how many times per day):
-                Internal GCP APIs Access (access to Pubsub, storage, Biguery, etc... APIs):
+    type: textarea
+    validations:
+        required: true
+    attributes:
+        label: Workload Details
+        description: Internal GCP APIs Access require client-side configuration. Please ask for help with that.
+        value: |
+            Data Flow (GCP->OnPrem or OnPrem -> GCP or both): 
+            Bandwidth Requirement (value in Mbps or Gbps required):         
+            Transfer Frequency (how many times per day):
+            Internal GCP APIs Access (access to Pubsub, storage, Biguery, etc... APIs):
     - type: markdown # description
-        attributes:
-            value: |
-                We enable GCP outbound traffic through Cloud NAT in the Shared VPC;
-                For inbound traffic, a firewall rule is required. Open one here.
-                Any flow (inbound or outbound) must be opened on onPrem's Firewall, by opening a ticket within Portal Data Center;
-                A GUIA role should be created to enable management access (SSH, RDP, etc...), by opening a ticket within Portal Data Center.
+    attributes:
+        value: |
+            We enable GCP outbound traffic through Cloud NAT in the Shared VPC;
+            For inbound traffic, a firewall rule is required. Open one here.
+            Any flow (inbound or outbound) must be opened on onPrem's Firewall, by opening a ticket within Portal Data Center;
+            A GUIA role should be created to enable management access (SSH, RDP, etc...), by opening a ticket within Portal Data Center.
