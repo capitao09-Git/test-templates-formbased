@@ -42,12 +42,12 @@ body:
           Composer Workloads - Number of Nodes (Composer Nodes):
           Composer Workloads - Max Number of Pods (max number of pods per host):
           Composer Workloads - Number of Services (number of services):
-- id: workload-details
+- id: network-details
   type: textarea
   validations:
       required: true
   attributes:
-      label: Workload Details
+      label: Network Details
       description: Internal GCP APIs Access require client-side configuration. Please ask for help with that.
       value: |
           Data Flow (GCP->OnPrem or OnPrem -> GCP or both): 
