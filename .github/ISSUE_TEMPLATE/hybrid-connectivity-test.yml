@@ -6,13 +6,6 @@ labels:
 assignees:
   - 
 body:
-    - id: request-description
-    type: textarea
-    validations:
-        required: true
-    attributes:
-        label: Request Description
-        placeholder: Write a brief description of what you need the connectivity for
     - id: generic-details
     type: textarea
     validations:
